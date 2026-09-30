@@ -34,7 +34,7 @@ int main()
 
     // A single flipped bit changes the checksum.
     char corrupted[] = "123456789";
-    corrupted[3] = static_cast<char>(corrupted[3] ^ 0x01);
+    corrupted[3]     = static_cast<char>(corrupted[3] ^ 0x01);
     check(Crc32c::calculate(corrupted, 9) != k_CHECK, "bit flip detected");
 
     if (failures != 0) {

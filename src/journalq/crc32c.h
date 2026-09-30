@@ -22,8 +22,8 @@ class Crc32c {
     // `crc`, the value returned by a previous call over the preceding bytes.
     // Pass 0 (the default) to start a new checksum. Checksumming a buffer in
     // several calls yields the same value as checksumming it in one call.
-    static std::uint32_t calculate(const void* data,
-                                   std::size_t length,
+    static std::uint32_t calculate(const void*   data,
+                                   std::size_t   length,
                                    std::uint32_t crc = 0) noexcept;
 };
 

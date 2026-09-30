@@ -26,8 +26,8 @@ constexpr std::array<std::uint32_t, 256> k_TABLE = makeTable();
 
 }  // namespace
 
-std::uint32_t Crc32c::calculate(const void* data,
-                                std::size_t length,
+std::uint32_t Crc32c::calculate(const void*   data,
+                                std::size_t   length,
                                 std::uint32_t crc) noexcept
 {
     const auto* bytes = static_cast<const unsigned char*>(data);
