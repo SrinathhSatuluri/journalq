@@ -7,4 +7,5 @@ function(journalq_test component)
   add_test(NAME ${component} COMMAND ${component}.t)
 endfunction()
 
+journalq_test(bigendian)
 journalq_test(crc32c)
