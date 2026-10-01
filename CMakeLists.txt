@@ -13,7 +13,8 @@ endif()
 set(JOURNALQ_SANITIZE "" CACHE STRING "Sanitizers to enable")
 
 add_library(journalq
-  src/journalq/crc32c.cpp)
+  src/journalq/crc32c.cpp
+  src/journalq/protocol.cpp)
 
 target_include_directories(journalq PUBLIC src)
 target_compile_options(journalq PRIVATE

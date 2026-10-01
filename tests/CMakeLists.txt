@@ -9,3 +9,4 @@ endfunction()
 
 journalq_test(bigendian)
 journalq_test(crc32c)
+journalq_test(protocol)
